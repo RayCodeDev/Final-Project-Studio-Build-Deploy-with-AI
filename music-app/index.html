@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeTunes - Your Music Experience</title>
+    <meta name="description" content="VibeTunes - Modern music streaming app with beautiful UI">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="header" id="app-header">
+            <div class="header-content">
+                <h1 class="app-title" id="app-title">VibeTunes</h1>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-bar" id="search-input" placeholder="Search for songs, artists...">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Music Player Section -->
+        <main class="music-player" id="music-player">
+            <div class="player-container">
+                <div class="album-art-container">
+                    <img src="src/assets/main-cover.jpg" alt="Current Song Cover" class="album-art" id="current-album-art">
+                    <div class="album-glow"></div>
+                </div>
+                
+                <div class="song-info">
+                    <h2 class="song-title" id="song-title">Midnight Vibes</h2>
+                    <p class="artist-name" id="artist-name">Stellar Sounds</p>
+                </div>
+
+                <div class="player-controls">
+                    <button class="control-btn" id="prev-btn" aria-label="Previous track">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button class="play-pause-btn" id="play-pause-btn" aria-label="Play/Pause">
+                        <i class="fas fa-play" id="play-pause-icon"></i>
+                    </button>
+                    <button class="control-btn" id="next-btn" aria-label="Next track">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                </div>
+
+                <div class="progress-container">
+                    <span class="time-display" id="current-time">0:00</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                            <div class="progress-handle" id="progress-handle"></div>
+                        </div>
+                    </div>
+                    <span class="time-display" id="total-time">3:45</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Top Tracks Section -->
+        <section class="top-tracks-section" id="top-tracks-section">
+            <h3 class="section-title">Top Tracks</h3>
+            <div class="tracks-container" id="tracks-container">
+                <div class="track-item" data-track="1">
+                    <img src="src/assets/album1.jpg" alt="Track 1" class="track-cover">
+                    <div class="track-overlay">
+                        <i class="fas fa-play track-play-icon"></i>
+                    </div>
+                    <div class="track-info">
+                        <p class="track-title">Summer Dreams</p>
+                        <p class="track-artist">Ocean Waves</p>
+                    </div>
+                </div>
+                
+                <div class="track-item" data-track="2">
+                    <img src="src/assets/album2.jpg" alt="Track 2" class="track-cover">
+                    <div class="track-overlay">
+                        <i class="fas fa-play track-play-icon"></i>
+                    </div>
+                    <div class="track-info">
+                        <p class="track-title">Electric Storm</p>
+                        <p class="track-artist">Thunder Kings</p>
+                    </div>
+                </div>
+                
+                <div class="track-item" data-track="3">
+                    <img src="src/assets/album3.jpg" alt="Track 3" class="track-cover">
+                    <div class="track-overlay">
+                        <i class="fas fa-play track-play-icon"></i>
+                    </div>
+                    <div class="track-info">
+                        <p class="track-title">Forest Whispers</p>
+                        <p class="track-artist">Nature's Call</p>
+                    </div>
+                </div>
+                
+                <div class="track-item" data-track="4">
+                    <img src="src/assets/album4.jpg" alt="Track 4" class="track-cover">
+                    <div class="track-overlay">
+                        <i class="fas fa-play track-play-icon"></i>
+                    </div>
+                    <div class="track-info">
+                        <p class="track-title">Jazz Nights</p>
+                        <p class="track-artist">Smooth Operators</p>
+                    </div>
+                </div>
+                
+                <div class="track-item" data-track="5">
+                    <img src="src/assets/album5.jpg" alt="Track 5" class="track-cover">
+                    <div class="track-overlay">
+                        <i class="fas fa-play track-play-icon"></i>
+                    </div>
+                    <div class="track-info">
+                        <p class="track-title">Neon Nights</p>
+                        <p class="track-artist">Retro Future</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
